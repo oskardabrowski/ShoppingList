@@ -1,0 +1,187 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, #7E0085, #420085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+}
+.container {
+    width: 70vh;
+    height: 90vh;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+@media(max-width: 600px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+}
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom left, #00E9AF, #00A6E9);
+}
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.header-name {
+    margin: 0;
+    padding: .5rem .5rem 1rem .5rem;
+    font-family: 'Courgette';
+    color: white;
+}
+
+.header-logo > svg{
+    width: 7.5rem;
+    height: auto;
+}
+.add-form {
+    width: 100%;
+    height: auto;
+    padding-top: .75rem;
+}
+.list-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.list-input {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 1px solid #000;
+    font-family: 'Courgette';
+    font-size: 1.1rem;
+    color:rgb(155, 155, 155)
+}
+.list-submit {
+    position: absolute;
+    width: 2.5rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    right: 1rem;
+
+}
+.list-submit > svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #00A6E9;
+}
+.list-submit:hover {
+    cursor: pointer;
+}
+.list-container {
+    margin: 0rem .5rem 0rem .5rem;
+    width: auto;
+    height: 45%;
+}
+.shopping-list {
+    list-style: none;
+    height: 100%;
+    padding: 0;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #00A6E9 #D0DEFF;
+}
+.list-element {
+    border-top: 1px solid #00a7e950;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}
+.element-delete {
+    border: none;
+    background: none;
+    fill: rgb(247, 108, 108);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.element-delete:hover {
+    cursor: pointer;
+}
+.element-delete > svg {
+    width: 2rem;
+    height: 2rem;
+}
+.element-name {
+    width: 100%;
+    font-weight: 600;
+    background: linear-gradient(to top right, #c700d1, #6900d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.reset-list-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.reset-list-btn > button > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #c700d1;
+    padding-right: .5rem;
+}
+.reset-list-btn > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border: none;
+    background: none;
+    color: #c700d1;
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding-top: 1rem;
+}
+.reset-list-btn > button:hover {
+    cursor: pointer;
+}
+.attributtion {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+.atr-div {
+    margin: 2rem;
+    width: 80%;
+    background-color: white;
+    display: flex;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pl">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Shopping List</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital@0;1&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="app-header">
+                <div class="header-logo">
+                    <svg>
+                        <use xlink:href="icons/shopping-bags.svg#bags"></use>
+                    </svg>
+                    <h2 class="header-name">Shopping App</h2>
+                </div>
+            </div>
+            <div class="add-form">
+                <div class="list-form">
+                    <input class="list-input" type="text" placeholder="Wpisz nazwę produktu">
+                    <button class="list-submit">
+                        <svg>
+                            <use xlink:href="icons/plus.svg#plus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="list-container">
+                <ul class="shopping-list">
+                </ul>
+            </div>
+            <div class="reset-list-btn">
+                <button class="resetBtn">
+                    <svg>
+                        <use xlink:href="icons/circle-of-two-clockwise-arrows-rotation.svg#reset"></use>
+                    </svg>
+                    Reset
+                </button>
+            </div>
+            <div class="attributtion">
+                Icons form flaticon.com, see authors here -> <a href="attributtion.html">Authors</a>
+            </div>
+        </div>
+        <script src="functions.js"></script>
+    </body>
+</html>
